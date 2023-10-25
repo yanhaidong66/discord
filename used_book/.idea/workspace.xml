@@ -5,31 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/oauth/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/MySqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/entity/MyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/resources/user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/OauthApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/OauthApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/oauth" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2XDJCwqQb0U6aetzmyqfZVwMcb8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "20",
     "node.js.detected.package.eslint": "true",
@@ -39,11 +67,27 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "f20e50099fb312c3af11c34e5c92c139",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "spring.configuration.checksum": "628c224c401f79c4d5458ba01b8239ca",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.DealApplication">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OauthApplication">
     <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="deal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.deal.DealApplication" />
@@ -54,6 +98,13 @@
     <configuration name="InformationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="information" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.information.InformationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.oauth.OauthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,11 +126,36 @@
       <option name="presentableId" value="Default" />
       <updated>1698157594281</updated>
       <workItem from="1698157595556" duration="1067000" />
-      <workItem from="1698210695212" duration="49000" />
+      <workItem from="1698210695212" duration="2836000" />
+      <workItem from="1698219242502" duration="94000" />
+      <workItem from="1698219370612" duration="12233000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/deal" />
+      <path value="$PROJECT_DIR$/information" />
+      <path value="$PROJECT_DIR$/oauth" />
+      <path value="$PROJECT_DIR$/user" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java</url>
+          <line>19</line>
+          <properties class="top.haidong.oauth.dao.UserDao" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

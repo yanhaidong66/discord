@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5341d59-91f6-4b36-8441-bf4e69dcfe97" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/used_book/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/used_book/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/used_book/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/used_book/.idea/used_book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/used_book.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/used_book/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/used_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/used_book/oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/used_book/oauth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/used_book/oauth/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "47db0c67874c75b8efb758ba2373bc83",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698207098072</updated>
       <workItem from="1698207099143" duration="319000" />
+      <workItem from="1698219228272" duration="13000" />
     </task>
     <servers />
   </component>
