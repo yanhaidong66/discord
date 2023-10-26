@@ -5,35 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/MyJedisFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth/src/main/resources/jedis-config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/common/MyJedisFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtKeyProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/MyPrivateKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/MyPublicKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/common/JwtFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/MyUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/top/haidong/user/UserApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/test/java/top/haidong/user/UserApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/OauthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/OauthApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/common/JedisFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/mapper/user_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/service/impl/MyUserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/test-classes/top/haidong/oauth/common/JedisFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/java/top/haidong/zookeeper/ZookeeperApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/test/java/top/haidong/zookeeper/ZookeeperApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +95,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JwtFactoryTest.getJwt">
+    <configuration name="JwtFactoryTest.getJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.common" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.common.JwtFactoryTest" />
+      <option name="METHOD_NAME" value="getJwt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyJedisFactoryTest.jedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oauth" />
       <extension name="coverage">
@@ -147,6 +158,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JwtFactoryTest.getJwt" />
         <item itemvalue="JUnit.MyJedisFactoryTest.jedis" />
       </list>
     </recent_temporary>
@@ -164,7 +176,7 @@
       <workItem from="1698219242502" duration="94000" />
       <workItem from="1698219370612" duration="16391000" />
       <workItem from="1698278990815" duration="6475000" />
-      <workItem from="1698291160752" duration="2324000" />
+      <workItem from="1698291160752" duration="19031000" />
     </task>
     <servers />
   </component>
@@ -188,6 +200,36 @@
           <url>file://$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/common/MyJedisFactoryTest.java</url>
           <line>12</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtFactory.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/JWTCreator.java</url>
+          <line>573</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/CryptoHelper.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/Algorithm.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

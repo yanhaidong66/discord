@@ -15,4 +15,10 @@
     <delete id="deleteUser" parameterType="String">
         DELETE FROM oauth.t_user WHERE user_username=#{userName};
     </delete>
+    <update id="updatePasswordByUserName" parameterType="String">
+        UPDATE oauth.t_user SET user_password=#{password} WHERE user_username=#{userName};
+    </update>
+    <select id="getUserById">
+        SELECT * FROM oauth.t_user WHERE user_id=#{id};
+    </select>
 </mapper>
