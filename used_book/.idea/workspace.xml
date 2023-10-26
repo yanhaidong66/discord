@@ -5,9 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/JwtFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/common/MyJedisFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/main/resources/jedis-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/common/MyJedisFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/OauthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/MyUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/resources/top/haidong/oauth/mapper/user_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/top/haidong/user/UserApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/java/top/haidong/user/UserApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -53,8 +80,8 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "database.query.execution",
-    "spring.configuration.checksum": "628c224c401f79c4d5458ba01b8239ca",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "f4a1418e0c9f8977ce1ca264cb471d67",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -73,7 +100,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OauthApplication">
+  <component name="RunManager">
+    <configuration name="MyJedisFactoryTest.jedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.common" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.common.MyJedisFactoryTest" />
+      <option name="METHOD_NAME" value="jedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="deal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.deal.DealApplication" />
@@ -102,6 +145,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyJedisFactoryTest.jedis" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,7 +162,9 @@
       <workItem from="1698157595556" duration="1067000" />
       <workItem from="1698210695212" duration="2836000" />
       <workItem from="1698219242502" duration="94000" />
-      <workItem from="1698219370612" duration="14271000" />
+      <workItem from="1698219370612" duration="16391000" />
+      <workItem from="1698278990815" duration="6475000" />
+      <workItem from="1698291160752" duration="2324000" />
     </task>
     <servers />
   </component>
@@ -122,24 +172,22 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/deal" />
       <path value="$PROJECT_DIR$/information" />
       <path value="$PROJECT_DIR$/oauth" />
       <path value="$PROJECT_DIR$/user" />
+      <path value="$PROJECT_DIR$/zookeeper" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java</url>
-          <line>19</line>
-          <properties class="top.haidong.oauth.dao.UserDao" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/common/MyJedisFactoryTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

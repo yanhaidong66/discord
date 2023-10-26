@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="deal" />
         <module name="information" />
-        <module name="user" />
         <module name="oauth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="oauth_server" target="17" />
+      <module name="user" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

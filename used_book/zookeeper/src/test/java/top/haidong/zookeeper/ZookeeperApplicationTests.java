@@ -1,13 +1,13 @@
-package top.haidong.user;
+package top.haidong.zookeeper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserApplicationTests {
+class ZookeeperApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

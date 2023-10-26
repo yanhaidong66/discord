@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 @Repository
 public class UserDao {
-    @Autowired
+
     private SqlSessionFactory sqlSessionFactory;
 
     public UserDao(){
@@ -41,5 +41,20 @@ public class UserDao {
         sqlSession.commit();
         sqlSession.close();
         return result;
+    }
+
+    public int updatePasswordByUserName(String userName,String password){
+        SqlSession sqlSession=sqlSessionFactory.openSession(false);
+        int result=sqlSession.getMapper(UserMapper.class).updatePasswordByUserName(userName,password);
+        sqlSession.commit();
+        sqlSession.close();
+        return result;
+    }
+    public MyUser getUserById(int id){
+        SqlSession sqlSession=sqlSessionFactory.openSession(false);
+        MyUser user=sqlSession.getMapper(UserMapper.class).getUserById(id);
+        sqlSession.commit();
+        sqlSession.close();
+        return user;
     }
 }
