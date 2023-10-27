@@ -1,25 +1,23 @@
 package top.haidong.oauth.common;
-
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.SignatureGenerationException;
-import com.auth0.jwt.exceptions.SignatureVerificationException;
-import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.RSAKeyProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
-
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Objects;
 
 @Component
+@PropertySource("classpath:key-config.properties")
 public class JwtFactory {
     private static final String ALGORITHM="RSA256";
     private static final String TYPE="jwt";
     private static final String ISSUER="grass_oauth";
-    private static final String EXPIRED="-1";
+    @Value("${client-key-expired-millis}")
+    private static long EXPIRED;
     private static final String AUDIENCE="-1";
     private static final String ISSUE_AT="-1";
     private static final String JWT_ID="-1";
@@ -39,9 +37,9 @@ public class JwtFactory {
         payload.put("user_id",userId);
         payload.put("authority",authority);
 
-        Date expiredAt=new Date();
-        Date issuedAt=new Date();
 
+        Date issuedAt=new Date();
+        Date expiredAt=new Date(issuedAt.getTime()+EXPIRED);
 
 
 
@@ -53,7 +51,7 @@ public class JwtFactory {
                 .withIssuer(ISSUER)
                 .withHeader(head)
                 .withPayload(payload)
-                .sign(Algorithm.RSA256(new MyPrivateKey()));
+                .sign(Algorithm.RSA256(JwtKeyProvider.getInstance()));
 
         return jwtToken;
 
