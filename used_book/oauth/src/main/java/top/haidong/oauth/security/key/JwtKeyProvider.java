@@ -52,4 +52,6 @@ public class JwtKeyProvider implements RSAKeyProvider {
         return "";
     }
 
+    public static String getPublicKeyJson(){return keyPair.getPublicKeyJson();}
+
 }

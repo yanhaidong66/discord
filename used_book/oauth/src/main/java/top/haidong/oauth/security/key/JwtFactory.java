@@ -32,7 +32,7 @@ public class JwtFactory {
     private static final String USER_ID="-1";
     private static final String USER_NAME="-1";
     private static final String AUTHORITY="-1";
-    private static final  RSAKeyProvider keyProvider= JwtKeyProvider.getInstance();
+    private static final  JwtKeyProvider keyProvider= JwtKeyProvider.getInstance();
 
 
     public static String getJwt(String audience,String authority){
@@ -66,6 +66,7 @@ public class JwtFactory {
         return keyProvider.getPublicKeyById("");
     }
 
+    public static String getPublicKeyJson(){return keyProvider.getPublicKeyJson();}
 
     /**
      * 验证token  合法性

@@ -31,7 +31,7 @@ class JwtFactoryTest {
         while(true) {
             String token=JwtFactory.getJwt("df","fd");
             PublicKey key=JwtFactory.getPublicKey();
-            System.out.println(JwtFactory.verify(token));
+            System.out.println(JwtFactory.getPublicKeyJson());
 
         }
 

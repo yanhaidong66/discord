@@ -3,7 +3,9 @@ package top.haidong.oauth.security.key;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 
+import java.math.BigInteger;
 import java.security.*;
+import java.security.interfaces.RSAPublicKey;
 import java.security.spec.RSAKeyGenParameterSpec;
 import java.util.Date;
 
@@ -63,6 +65,20 @@ public class MyKeyPair {
     }
     public Date getKeyExpiredTime(){
         return keyExpiredTime;
+    }
+    public  String getPublicKeyJson(){
+        RSAPublicKey rsaPublicKey = (RSAPublicKey) publicKey;
+        BigInteger publicExponent = rsaPublicKey.getPublicExponent();
+        BigInteger modulus = rsaPublicKey.getModulus();
+        return "{"
+                + "\"algorithm\""+":"+"\""+publicKey.getAlgorithm()+"\""+","
+                + "\"format\""+":"+"\""+publicKey.getFormat()+"\""+","
+                + "\"exponent\""+":"+"\""+publicExponent.toString()+"\""+","
+                + "\"modulus\""+":"+"\""+modulus.toString()+"\""+","
+                + "\"expired\""+":"+"\""+keyExpiredTime.toString()+"\""+","
+                + "\"createTime\""+":"+"\""+keyCreateTime.toString()+"\""+","
+                + "\"issuer\""+":"+"\"grassOauth\""
+                + "}";
     }
 
 }

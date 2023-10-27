@@ -16,6 +16,13 @@ public class MyUser implements UserDetails {
     private String email;
     private LocalDateTime createTime;
     private LocalDateTime modifiedTime;
+    public MyUser(){
+
+    };
+    public MyUser(String userName,String password){
+        this.userName=userName;
+        this.password=password;
+    };
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

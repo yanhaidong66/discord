@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="">
+    <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="key section is done">
+      <change afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/security/MyAuthenticationHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/service/impl/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/entity/MyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/entity/MyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyAuthenticationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/MyLoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/JwtFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/JwtFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/JwtKeyProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/JwtKeyProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/MyKeyPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/security/key/MyKeyPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/security/key/JwtFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/security/key/JwtFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/entity/MyUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/entity/MyUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/MyAuthenticationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/MyAuthenticationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/JwtFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/JwtFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/JwtKeyProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/JwtKeyProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/MyKeyPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/classes/top/haidong/oauth/security/key/MyKeyPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth/target/test-classes/top/haidong/oauth/security/key/JwtFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/oauth/target/test-classes/top/haidong/oauth/security/key/JwtFactoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,37 +52,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f4a1418e0c9f8977ce1ca264cb471d67&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "OverrideImplement.combined": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "f4a1418e0c9f8977ce1ca264cb471d67",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -73,6 +92,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.haidong.oauth.security" />
+      <recent name="top.haidong.oauth.service.impl" />
       <recent name="top.haidong.oauth.security.key" />
     </key>
   </component>
@@ -83,23 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JwtFactoryTest.getTokenInfo">
-    <configuration name="JwtFactoryTest.getJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oauth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.haidong.oauth.security.key.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.haidong.oauth.common" />
-      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.common.JwtFactoryTest" />
-      <option name="METHOD_NAME" value="getJwt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.OauthApplication">
     <configuration name="JwtFactoryTest.getPublicKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oauth" />
       <extension name="coverage">
@@ -148,17 +153,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyJedisFactoryTest.jedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyAuthenticationHandlerTest.onAuthenticationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oauth" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.haidong.oauth.security.key.*" />
+          <option name="PATTERN" value="top.haidong.oauth.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.haidong.oauth.common" />
-      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.common.MyJedisFactoryTest" />
-      <option name="METHOD_NAME" value="jedis" />
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.security" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.security.MyAuthenticationHandlerTest" />
+      <option name="METHOD_NAME" value="onAuthenticationSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="addUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JwtFactoryTest.getTokenInfo" />
         <item itemvalue="JUnit.JwtFactoryTest.verify" />
+        <item itemvalue="JUnit.MyAuthenticationHandlerTest.onAuthenticationSuccess" />
+        <item itemvalue="JUnit.UserServiceImplTest.addUser" />
+        <item itemvalue="JUnit.JwtFactoryTest.getTokenInfo" />
         <item itemvalue="JUnit.JwtFactoryTest.getPublicKey" />
-        <item itemvalue="JUnit.JwtFactoryTest.getJwt" />
-        <item itemvalue="JUnit.MyJedisFactoryTest.jedis" />
       </list>
     </recent_temporary>
   </component>
@@ -217,8 +238,17 @@
       <workItem from="1698278990815" duration="6475000" />
       <workItem from="1698291160752" duration="19031000" />
       <workItem from="1698367860124" duration="15184000" />
-      <workItem from="1698389870473" duration="142000" />
+      <workItem from="1698389870473" duration="3211000" />
+      <workItem from="1698396337178" duration="12043000" />
     </task>
+    <task id="LOCAL-00001" summary="key section is done">
+      <created>1698390043937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698390043937</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +263,8 @@
       <path value="$PROJECT_DIR$/user" />
       <path value="$PROJECT_DIR$/zookeeper" />
     </ignored-roots>
+    <MESSAGE value="key section is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="key section is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -246,6 +278,16 @@
           <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
           <line>48</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/main/java/top/haidong/oauth/dao/UserDao.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth/src/test/java/top/haidong/oauth/service/impl/UserServiceImplTest.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
