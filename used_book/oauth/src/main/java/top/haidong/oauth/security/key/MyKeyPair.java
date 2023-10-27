@@ -1,13 +1,24 @@
-package top.haidong.oauth.common;
+package top.haidong.oauth.security.key;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 
 import java.security.*;
 import java.security.spec.RSAKeyGenParameterSpec;
-@Component
+import java.util.Date;
+
+/**
+ * RSA密钥对
+ * **/
+@PropertySource("classpath:key-config.properties")
 public class MyKeyPair {
-    private static  PrivateKey privateKey;
-    private static  PublicKey publicKey;
+
+    @Value("${server-key-expired-millis}")
+    private static long EXPIRE_TIME_MILLIS=12000;
+    private PrivateKey privateKey;
+    private PublicKey publicKey;
+    private volatile Date keyCreateTime;
+    private  volatile Date keyExpiredTime;
 
     public MyKeyPair(){
         // 使用安全随机数生成器
@@ -21,7 +32,7 @@ public class MyKeyPair {
             throw new RuntimeException(e);
         }
 
-        // 设置密钥大小（通常为2048位或更多位）
+        // 设置密钥大小（2048位,256字节）
         int keySize = 2048;
         try {
             keyPairGenerator.initialize(new RSAKeyGenParameterSpec(keySize, RSAKeyGenParameterSpec.F4), secureRandom);
@@ -31,10 +42,15 @@ public class MyKeyPair {
 
         // 生成密钥对
         KeyPair keyPair = keyPairGenerator.generateKeyPair();
+        Date current=new Date();
+
 
         // 获取公钥和私钥
         publicKey = keyPair.getPublic();
         privateKey = keyPair.getPrivate();
+
+        keyCreateTime=current;
+        keyExpiredTime=new Date(current.getTime()+EXPIRE_TIME_MILLIS);
     }
     public PrivateKey getPrivateKey(){
         return privateKey;
@@ -42,4 +58,11 @@ public class MyKeyPair {
     public PublicKey getPublicKey(){
         return publicKey;
     }
+    public Date getKeyCreateTime(){
+        return keyCreateTime;
+    }
+    public Date getKeyExpiredTime(){
+        return keyExpiredTime;
+    }
+
 }
