@@ -11,7 +11,8 @@ import java.util.Date;
 
 /**
  * 单例模式
- * 在每次get密钥时候会判断密钥在服务器的过期时间是否到了，如果到了，就创建新的密钥取代原先的。
+ * 在每次get私有密钥时候会判断密钥在服务器的过期时间是否到了，如果到了，就创建新的密钥取代原先的。
+ * 在创建密钥对时，会向zookeeper发送新创建的密钥对的公钥部分。
  */
 @PropertySource("classpath:key-config.properties")
 public class JwtKeyProvider implements RSAKeyProvider {
@@ -35,11 +36,15 @@ public class JwtKeyProvider implements RSAKeyProvider {
     public RSAPrivateKey getPrivateKey() {
         Date current=new Date();
         if(current.after(keyPair.getKeyExpiredTime())){
-            keyPair=new MyKeyPair();
+            createNewKeyPair();
             System.out.println("--------------------------new-key_------------------------");
         }
 
         return (RSAPrivateKey) keyPair.getPrivateKey();
+    }
+    private MyKeyPair createNewKeyPair(){
+        keyPair=new MyKeyPair();
+        return keyPair;
     }
 
     @Override
