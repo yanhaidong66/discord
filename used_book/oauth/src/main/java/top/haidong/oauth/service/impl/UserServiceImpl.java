@@ -13,10 +13,12 @@ import top.haidong.oauth.dao.UserDao;
 import top.haidong.oauth.entity.MyUser;
 import top.haidong.oauth.service.UserService;
 
+import java.util.Date;
+
 @Service
 public class UserServiceImpl implements UserDetailsService, UserDetailsPasswordService, UserService {
-    private final String redisUserUserNameKeyPrefix="oauth:user:user_username";
-    private final String redisUserIdKeyPrefix="oauth:user:user_id";
+    private final String REDIS_USER_USERNAME_KEY_PREFIX="oauth:user:user_username:";
+    private final String REDIS_USER_USERID_KEY_PREFIX="oauth:user:user_id:";
     @Autowired
     private UserDao userDao;
     @Override
@@ -33,7 +35,7 @@ public class UserServiceImpl implements UserDetailsService, UserDetailsPasswordS
     @Override
     public MyUser getUserByUserName(String userName) {
         Jedis jedisSession= MyJedisFactory.getJedis();
-        String redisResult=jedisSession.get(redisUserUserNameKeyPrefix+userName);
+        String redisResult=jedisSession.get(REDIS_USER_USERNAME_KEY_PREFIX+userName);
         if(redisResult!=null)
             return JSON.parseObject(redisResult, MyUser.class);
         return userDao.getUserByUserName(userName);
@@ -41,10 +43,12 @@ public class UserServiceImpl implements UserDetailsService, UserDetailsPasswordS
 
     @Override
     public int addUser(MyUser user) {
+        user.setCreateTime(new Date());
+        user.setModifiedTime(new Date());
         int result=userDao.addUser(user);
         Jedis jedisSession=MyJedisFactory.getJedis();
-        jedisSession.set(redisUserUserNameKeyPrefix+user.getUsername(),JSON.toJSONString(user));
-        jedisSession.set(redisUserIdKeyPrefix+user.getId(),JSON.toJSONString(user));
+        jedisSession.set(REDIS_USER_USERNAME_KEY_PREFIX+user.getUsername(),JSON.toJSONString(user));
+        jedisSession.set(REDIS_USER_USERID_KEY_PREFIX+user.getId(),JSON.toJSONString(user));
         return result;
     }
 }

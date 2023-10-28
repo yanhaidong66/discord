@@ -9,7 +9,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias alias="User" type="top.haidong.oauth.entity.MyUser"/>
+        <typeAlias alias="MyUser" type="top.haidong.oauth.entity.MyUser"/>
     </typeAliases>
 
     <environments default="development">

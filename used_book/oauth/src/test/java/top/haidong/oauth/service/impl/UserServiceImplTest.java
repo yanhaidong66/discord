@@ -11,8 +11,12 @@ import top.haidong.oauth.mapper.UserMapper;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(
-        classes = { UserServiceImpl.class,UserDao.class, UserMapper.class}
+        classes = {
+                UserServiceImpl.class,UserDao.class, UserMapper.class
+        }
 )
+
+
 class UserServiceImplTest {
     @Autowired
     UserServiceImpl userService;
@@ -27,15 +31,23 @@ class UserServiceImplTest {
 
     @Test
     void updatePassword() {
+        MyUser user=new MyUser("haidong","555");
+        user.setEmail("123");
+        UserDetails userDetails = userService.updatePassword(user, "333");
+        System.out.println(userDetails);
     }
 
     @Test
     void getUserByUserName() {
+        System.out.println(userService.getUserByUserName("haidong1"));
     }
 
     @Test
     void addUser() {
-        MyUser user=new MyUser("haidong","555");
+        MyUser user=new MyUser("haidong1","555");
+        user.setEmail("123");
         userService.addUser(user);
     }
+
+
 }
