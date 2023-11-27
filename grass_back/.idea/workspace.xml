@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="security section not complete">
+      <change afterPath="$PROJECT_DIR$/common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/top/haidong556/commen/CommenApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/top/haidong556/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/test/java/com/example/eureka/EurekaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/top/haidong556/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/cloud.Nd6lBQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/discord.LD2fYw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/schedule_system.1xTPaA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/dataSources/126e6f3b-95de-48dc-8a3b-013f9f289dc1/storage_v2/_src_/schema/world.khvBBg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/used_book.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/src/main/java/top/haidong556/deal/DealApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/src/test/java/top/haidong556/deal/DealApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/deal/target/classes/top/haidong/deal/DealApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/src/main/java/top/haidong556/information/InformationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/information/src/test/java/top/haidong556/information/InformationApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/OauthApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/common/MyJedisFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/common/MySqlSessionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/entity/MyUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/MyAuthenticationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/MyLoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/key/JwtKeyProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/security/key/MyKeyPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/java/top/haidong556/oauth/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/jedis-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/key-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/mybatis-conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/top/haidong556/oauth/mapper/user_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/main/resources/user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/test/java/top/haidong556/oauth/OauthApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/test/java/top/haidong556/oauth/security/MyAuthenticationHandlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/test/java/top/haidong556/oauth/security/key/JwtFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/src/test/java/top/haidong556/oauth/service/impl/UserServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/jedis-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/key-config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/mybatis-conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/OauthApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/common/MyJedisFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/common/MySqlSessionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/entity/MyUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/mapper/user_mapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/MyAuthenticationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/MyLoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/key/JwtFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/key/JwtKeyProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/security/key/MyKeyPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/top/haidong/oauth/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/classes/user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/test-classes/top/haidong/oauth/OauthApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/test-classes/top/haidong/oauth/security/MyAuthenticationHandlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/test-classes/top/haidong/oauth/security/key/JwtFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/oauth_server/target/test-classes/top/haidong/oauth/service/impl/UserServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../used_book/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/common" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XDJCwqQb0U6aetzmyqfZVwMcb8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "OverrideImplement.combined": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/hd/Desktop/二手书/used_book/gateway",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "a6ec533d347b4d012c35f2e749574a0d",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.haidong.oauth.service.impl" />
+      <recent name="top.haidong.oauth.security" />
+      <recent name="top.haidong.oauth.security.key" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.JwtFactoryTest.verify">
+    <configuration name="JwtFactoryTest.verify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.security.key.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.security.key" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.security.key.JwtFactoryTest" />
+      <option name="METHOD_NAME" value="verify" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.getUserByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="getUserByUserName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.loadUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="loadUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.updatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.haidong556.oauth.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.haidong.oauth.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="top.haidong556.oauth.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="updatePassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="common" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.commen.CommenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="deal_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.deal.DealApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InformationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="information_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.information.InformationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong556.oauth.OauthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.haidong.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.JwtFactoryTest.verify" />
+      <item itemvalue="JUnit.UserServiceImplTest.addUser" />
+      <item itemvalue="JUnit.UserServiceImplTest.getUserByUserName" />
+      <item itemvalue="JUnit.UserServiceImplTest.loadUserByUsername" />
+      <item itemvalue="JUnit.UserServiceImplTest.updatePassword" />
+      <item itemvalue="Spring Boot.CommonApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.CommenApplication" />
+      <item itemvalue="Spring Boot.DealApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.InformationApplication" />
+      <item itemvalue="Spring Boot.OauthApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceImplTest.getUserByUserName" />
+        <item itemvalue="JUnit.UserServiceImplTest.addUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.loadUserByUsername" />
+        <item itemvalue="JUnit.UserServiceImplTest.updatePassword" />
+        <item itemvalue="JUnit.JwtFactoryTest.verify" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c6e53da2-3b20-4bb7-9c3e-1c24c64d92b3" name="更改" comment="" />
+      <created>1698157594281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698157594281</updated>
+      <workItem from="1698157595556" duration="1067000" />
+      <workItem from="1698210695212" duration="2836000" />
+      <workItem from="1698219242502" duration="94000" />
+      <workItem from="1698219370612" duration="16391000" />
+      <workItem from="1698278990815" duration="6475000" />
+      <workItem from="1698291160752" duration="19031000" />
+      <workItem from="1698367860124" duration="15184000" />
+      <workItem from="1698389870473" duration="3211000" />
+      <workItem from="1698396337178" duration="12225000" />
+      <workItem from="1698453573757" duration="5230000" />
+      <workItem from="1698737433342" duration="48000" />
+      <workItem from="1698737491534" duration="20000" />
+      <workItem from="1701064163352" duration="3676000" />
+      <workItem from="1701071253778" duration="2065000" />
+      <workItem from="1701075775897" duration="1990000" />
+      <workItem from="1701077783474" duration="5562000" />
+      <workItem from="1701083414433" duration="1085000" />
+      <workItem from="1701084516040" duration="106000" />
+    </task>
+    <task id="LOCAL-00001" summary="key section is done">
+      <created>1698390043937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698390043937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="security section not complete">
+      <created>1698418884344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698418884344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/deal" />
+      <path value="$PROJECT_DIR$/information" />
+      <path value="$PROJECT_DIR$/oauth" />
+      <path value="$PROJECT_DIR$/user" />
+      <path value="$PROJECT_DIR$/zookeeper" />
+    </ignored-roots>
+    <MESSAGE value="key section is done" />
+    <MESSAGE value="security section not complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="security section not complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/auth0/java-jwt/4.2.1/java-jwt-4.2.1-sources.jar!/com/auth0/jwt/algorithms/RSAAlgorithm.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth_server/src/test/java/top/haidong556/oauth/service/impl/UserServiceImplTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth_server/src/main/java/top/haidong556/oauth/service/impl/UserServiceImpl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
