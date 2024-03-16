@@ -3,9 +3,12 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 
 import java.security.PublicKey;
 import java.util.Date;
@@ -34,31 +37,32 @@ public class JwtFactory {
     private static final  JwtKeyProvider keyProvider= JwtKeyProvider.getInstance();
 
 
-    public static String getJwt(String audience,String authority){
+    public static String getJwt(Authentication authentication){
         HashMap<String, Object> head=new HashMap<>();
         head.put("type",TYPE);
         head.put("algorithm",ALGORITHM);
 
         HashMap<String,String> payload=new HashMap<>();
-        payload.put("authority",authority);
-
+        String a=new String();
+        for(GrantedAuthority s:authentication.getAuthorities()){
+            a+=s.toString()+";";
+        }
+        payload.put("authority",a);
 
         Date issuedAt=new Date();
         Date expiredAt=new Date(issuedAt.getTime()+EXPIRED);
 
 
-
         JWTCreator.Builder jwtBuilder=JWT.create();
-        String jwtToken=jwtBuilder.withExpiresAt(expiredAt)
-                .withAudience(audience)
+        String jwt=jwtBuilder.withExpiresAt(expiredAt)
+                .withAudience(authentication.getName())
                 .withIssuedAt(issuedAt)
-                .withJWTId(JWT_ID)
                 .withIssuer(ISSUER)
                 .withHeader(head)
                 .withPayload(payload)
-                .sign(Algorithm.RSA256(JwtKeyProvider.getInstance()));
+                .sign(Algorithm.RSA256(keyProvider));
 
-        return jwtToken;
+        return jwt;
 
     }
     public static PublicKey getPublicKey(){
@@ -66,26 +70,37 @@ public class JwtFactory {
     }
 
     public static String getPublicKeyJson(){return keyProvider.getPublicKeyJson();}
+    public static String getPublicKeyProperties(){return keyProvider.getPublicKeyProperties();}
 
     /**
      * 验证token  合法性
      */
-    public static DecodedJWT verify(String token) {
-
-        JWTVerifier jwt = JWT.require(Algorithm.RSA256(keyProvider.getPublicKeyById(""), null))
-                .build();
-
-        return jwt.verify(token);
-
+    public static boolean verify(String token) {
+        DecodedJWT verify=null;
+        try {
+            verify = JWT.require(Algorithm.RSA256(keyProvider.getPublicKeyById(""), null))
+                    .build()
+                    .verify(token);
+            // 验证成功，处理验证通过后的逻辑
+            return true;
+        } catch (JWTVerificationException exception) {
+            // 验证失败，处理验证失败后的逻辑
+            System.out.println("验证失败");
+            return false;
+        }
 
     }
 
     /**
      * 获取token信息方法
      */
-    public static DecodedJWT getTokenInfo(String token){
+    public static String getTokenInfo(String token){
         DecodedJWT verify = JWT.require(Algorithm.RSA256(keyProvider.getPublicKeyById(""),null)).build().verify(token);
-        return verify;
+        return verify.getClaims().toString();
+    }
+    public static boolean updateJwt(){
+        keyProvider.createNewKeyPair();
+        return true;
     }
 
 }

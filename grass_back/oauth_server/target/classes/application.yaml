@@ -3,10 +3,18 @@ server:
   servlet:
     context-path: /oauth
 spring:
+  config:
+    import: nacos:oauth-server.properties
+  cloud:
+    nacos:
+      config:
+        server-addr: http://localhost:8848
+      discovery:
+        server-addr: http://localhost:8848
   datasource:
     url: jdbc:mysql://localhost:3306/oauth
-    username: "oauth"
-    password: "00227"
+    username: oauth
+    password: 000227
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
@@ -14,5 +22,7 @@ spring:
       port: 6379
       password:
       host: 127.0.0.1
+  application:
+    name: oauth-server
 
 

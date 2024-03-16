@@ -16,11 +16,11 @@ import java.util.Date;
 public class MyKeyPair {
 
     @Value("${server-key-expired-millis}")
-    private static long EXPIRE_TIME_MILLIS=12000;
+    private static long EXPIRE_TIME_MILLIS=-1;
     private PrivateKey privateKey;
     private PublicKey publicKey;
-    private volatile Date keyCreateTime;
-    private  volatile Date keyExpiredTime;
+    private Date keyCreateTime;
+    private  Date keyExpiredTime;
 
     public MyKeyPair(){
         // 使用安全随机数生成器
@@ -79,6 +79,18 @@ public class MyKeyPair {
                 + "\"createTime\""+":"+"\""+keyCreateTime.toString()+"\""+","
                 + "\"issuer\""+":"+"\"grassOauth\""
                 + "}";
+    }
+    public String getPublicKeyProperties(){
+        RSAPublicKey rsaPublicKey = (RSAPublicKey) publicKey;
+        BigInteger publicExponent = rsaPublicKey.getPublicExponent();
+        BigInteger modulus = rsaPublicKey.getModulus();
+        return  "algorithm="+publicKey.getAlgorithm()+"\n"
+                + "format="+publicKey.getFormat()+"\n"
+                + "exponent="+publicExponent.toString()+"\n"
+                + "modulus="+modulus.toString()+"\n"
+                + "expired="+keyExpiredTime.getTime()+"\n"
+                + "createTime="+keyCreateTime.getTime()+"\n"
+                + "issuer="+"grassOauth";
     }
 
 }

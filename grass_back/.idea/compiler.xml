@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/chat_server/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="chat_server" />
+        <module name="information_server" />
         <module name="deal_server" />
         <module name="oauth_SERVER" />
-        <module name="common" />
-        <module name="eureka" />
         <module name="gateway" />
-        <module name="information_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="char_server" target="20" />
       <module name="oauth" target="17" />
       <module name="oauth_server" target="20" />
       <module name="used_book" target="20" />

@@ -33,7 +33,7 @@ public class MyAuthenticationHandler implements AuthenticationSuccessHandler
              * **/
              @Override
              public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-                 addJwtToResponse(response);
+                 addJwtToResponse(response,authentication);
                  response.setContentType(RESPONSE_CONTEXT_TYPE);
                  response.setStatus(HttpStatus.OK.value());
                  // SecurityContext在设置Authentication的时候并不会自动写入Session，读的时候却会根据Session判断，所以需要手动写入一次，否则下一次刷新时SecurityContext是新创建的实例。
@@ -42,9 +42,9 @@ public class MyAuthenticationHandler implements AuthenticationSuccessHandler
 
 
              }
-             private void addJwtToResponse(HttpServletResponse response){
+             private void addJwtToResponse(HttpServletResponse response,Authentication authentication){
                  try {
-                     response.getWriter().write("{\""+"jwt"+"\""+":"+"\""+JwtFactory.getPublicKeyJson()+"\"}");
+                     response.getWriter().write("{\""+"jwt"+"\""+":"+"\""+JwtFactory.getJwt(authentication)+"\"}");
                  } catch (IOException e) {
                      throw new RuntimeException(e);
                  }
@@ -54,6 +54,7 @@ public class MyAuthenticationHandler implements AuthenticationSuccessHandler
              public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
                  response.setContentType(RESPONSE_CONTEXT_TYPE);
                  response.setStatus(HttpStatus.UNAUTHORIZED.value());
+                 System.out.println("unauthorized");
              }
 
              @Override

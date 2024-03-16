@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="Message" type="top.haidong556.entity.Message"/>
+        <typeAlias alias="MyUser" type="top.haidong556.oauth.entity.MyUser"/>
+        <typeAlias type="top.haidong556.entity.Conversation" alias="Conversation"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="username" value="chat"/>
+                <property name="password" value="000227"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/db_chat"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="top/haidong556/mapper/user_mapper.xml"/>
+        <mapper resource="top/haidong556/mapper/conversation_mapper.xml"/>
+        <mapper resource="top/haidong556/mapper/message_mapper.xml"/>
+    </mappers>
+</configuration>

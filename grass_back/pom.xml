@@ -8,10 +8,9 @@
         <module>common</module>
         <module>gateway</module>
         <module>oauth_server</module>
-        <module>eureka</module>
         <module>information_server</module>
         <module>deal_server</module>
-
+        <module>chat_server</module>
     </modules>
 
     <groupId>top.haidong556</groupId>
@@ -43,6 +42,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2022.0.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -52,7 +58,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.13</version>
+            </plugin>
+
         </plugins>
+
     </build>
+
     
 </project>

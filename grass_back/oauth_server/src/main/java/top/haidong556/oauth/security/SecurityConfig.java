@@ -7,6 +7,9 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import top.haidong556.oauth.service.impl.UserServiceImpl;
@@ -16,6 +19,7 @@ import top.haidong556.oauth.service.impl.UserServiceImpl;
 public class SecurityConfig  {
     @Autowired
     private UserServiceImpl userService;
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http,
                                                    MyLoginFilter loginFilter,
                                                    MyAuthenticationHandler authenticationHandler
@@ -58,34 +62,31 @@ public class SecurityConfig  {
 
         return http.build();
     }
-
-
-
     @Bean
-    public AuthenticationManager authenticationManager() throws Exception {
-        DaoAuthenticationProvider daoAuthenticationProvider=new DaoAuthenticationProvider();
-        daoAuthenticationProvider.setUserDetailsService(userService);
-        ProviderManager providerManager=new ProviderManager(daoAuthenticationProvider);
+    public AuthenticationManager myAuthenticationManager(DaoAuthenticationProvider myDaoAuthenticationProvider) throws Exception {
+        ProviderManager providerManager=new ProviderManager(myDaoAuthenticationProvider);
         return providerManager;
     }
 
     @Bean
-    public DaoAuthenticationProvider daoAuthenticationProvider(UserServiceImpl userService) {
+    public DaoAuthenticationProvider myDaoAuthenticationProvider(UserServiceImpl userService) {
         final DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+        provider.setPasswordEncoder(new PasswordEncoder() {
+            @Override
+            public String encode(CharSequence rawPassword) {
+                return rawPassword.toString();
+
+            }
+            @Override
+            public boolean matches(CharSequence rawPassword, String encodedPassword) {
+                return encodedPassword.matches(rawPassword.toString());
+            }
+        });
         provider.setUserDetailsService(userService);
         provider.setUserDetailsPasswordService(userService);
         provider.setHideUserNotFoundExceptions(false);
         return provider;
     }
-
-
-
-
-
-
-
-
-
 
 
 }

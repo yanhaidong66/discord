@@ -16,6 +16,7 @@ import java.util.Date;
 public class JwtKeyProvider implements RSAKeyProvider {
     private static final JwtKeyProvider instance=new JwtKeyProvider();
     private static volatile MyKeyPair keyPair;
+    private static volatile boolean isUpdatingKeyPair=false;
 
     private JwtKeyProvider(){
         keyPair=new MyKeyPair();
@@ -40,9 +41,9 @@ public class JwtKeyProvider implements RSAKeyProvider {
 
         return (RSAPrivateKey) keyPair.getPrivateKey();
     }
-    private MyKeyPair createNewKeyPair(){
+    public void createNewKeyPair(){
         keyPair=new MyKeyPair();
-        return keyPair;
+        return ;
     }
 
     @Override
@@ -51,5 +52,6 @@ public class JwtKeyProvider implements RSAKeyProvider {
     }
 
     public static String getPublicKeyJson(){return keyPair.getPublicKeyJson();}
+    public static String getPublicKeyProperties(){return keyPair.getPublicKeyProperties();}
 
 }

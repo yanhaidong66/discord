@@ -8,7 +8,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
-import top.haidong556.oauth.common.MyJedisFactory;
+
+import top.haidong556.config.JedisPool;
 import top.haidong556.oauth.repository.UserRepository;
 import top.haidong556.oauth.entity.MyUser;
 import top.haidong556.oauth.service.UserService;
@@ -34,7 +35,7 @@ public class UserServiceImpl implements UserDetailsService, UserDetailsPasswordS
 
     @Override
     public MyUser getUserByUserName(String userName) {
-        Jedis jedisSession= MyJedisFactory.getJedis();
+        Jedis jedisSession= JedisPool.getInstance().getJedis();
         String redisResult=jedisSession.get(REDIS_USER_USERNAME_KEY_PREFIX+userName);
         if(redisResult!=null)
             return JSON.parseObject(redisResult, MyUser.class);
@@ -46,7 +47,7 @@ public class UserServiceImpl implements UserDetailsService, UserDetailsPasswordS
         user.setCreateTime(new Date());
         user.setModifiedTime(new Date());
         int result=userRepository.addUser(user);
-        Jedis jedisSession=MyJedisFactory.getJedis();
+        Jedis jedisSession=JedisPool.getInstance().getJedis();
         jedisSession.set(REDIS_USER_USERNAME_KEY_PREFIX+user.getUsername(),JSON.toJSONString(user));
         jedisSession.set(REDIS_USER_USERID_KEY_PREFIX+user.getId(),JSON.toJSONString(user));
         return result;
